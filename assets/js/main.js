@@ -75,7 +75,7 @@ class ValidarFormulario {
       this.createError(field, 'Usuário deve conter entre 3 e 12 caracteres.');
       valid = false;
     }
-
+    // validação caracteres especiais
     if(!/[a-zA-Z0-9\-\/]/.test( user )){
       this.createError(field, 'Usuário deve conter apenas letras e/ou números.');
       valid = false;
